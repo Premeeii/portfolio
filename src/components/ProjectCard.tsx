@@ -25,7 +25,7 @@ export default function ProjectCard({
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-80px" }}
       transition={{ duration: 0.6, ease: "easeOut" }}
-      className="group overflow-hidden rounded-sm border border-surface bg-surface/20"
+      className="group overflow-hidden rounded-3xl border border-surface bg-surface/20"
     >
       <div className="grid sm:grid-cols-2">
         {/* Image */}
@@ -56,9 +56,7 @@ export default function ProjectCard({
             {title}
           </h3>
 
-          <p className="text-sm leading-relaxed text-accent">
-            {description}
-          </p>
+          <p className="text-sm leading-relaxed text-accent">{description}</p>
 
           <Link
             href={href}

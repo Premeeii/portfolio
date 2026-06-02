@@ -23,8 +23,8 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className="sticky top-0 z-50 w-full border-b border-surface bg-background/90 backdrop-blur-md">
-        <div className="w-full flex items-center justify-between px-6 py-5 md:justify-end md:px-12">
+      <nav className="sticky top-0 z-50 w-full">
+        <div className="w-full flex items-center justify-between px-6 py-4 md:justify-center">
           {/* lower than md display*/}
           <button
             type="button"
@@ -59,7 +59,10 @@ export default function Navbar() {
           </button>
 
           {/* upper than md display*/}
-          <motion.ul layoutRoot className="hidden items-center gap-12 md:flex">
+          <motion.ul
+            layoutRoot
+            className="hidden items-center gap-10 rounded-full border border-surface/50 bg-surface/30 px-25 py-3 backdrop-blur-md md:flex"
+          >
             {NAV_ITEMS.map((item) => {
               const isActive = pathname === item.href;
 
@@ -68,9 +71,7 @@ export default function Navbar() {
                   <Link
                     href={item.href}
                     className={`text-xs font-medium tracking-[0.2em] transition-colors duration-300 ${
-                      isActive
-                        ? "text-accent"
-                        : "text-muted hover:text-accent"
+                      isActive ? "text-accent" : "text-muted hover:text-accent"
                     }`}
                   >
                     {item.label}
@@ -80,7 +81,7 @@ export default function Navbar() {
                     <motion.span
                       layoutId="navbar-underline"
                       layout="x"
-                      className="absolute -bottom-1.5 left-0 h-px w-full bg-accent"
+                      className="absolute top-6 left-0 h-px w-full bg-accent"
                       transition={{
                         type: "spring",
                         stiffness: 380,
@@ -97,9 +98,7 @@ export default function Navbar() {
 
       {/* Mobile overlay menu */}
       <AnimatePresence>
-        {isMobileOpen && (
-          <MobileNav items={NAV_ITEMS} onClose={closeMobile} />
-        )}
+        {isMobileOpen && <MobileNav items={NAV_ITEMS} onClose={closeMobile} />}
       </AnimatePresence>
     </>
   );

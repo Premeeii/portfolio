@@ -43,7 +43,7 @@ export default function MobileNav({ items, onClose }: MobileNavProps) {
 
   return (
     <motion.div
-      className="fixed inset-0 z-40 md:hidden"
+      className="fixed inset-0 z-40  md:hidden"
       initial="closed"
       animate="open"
       exit="closed"
