@@ -82,7 +82,7 @@ export default function Home() {
       </ScrollPushBack>
 
       {/* ─── Who I Am Section ─── */}
-      <ScrollPushBack scrollHeight={1.5}>
+      <ScrollPushBack scrollHeight={2}>
         <section id="content" className="flex min-h-[calc(100dvh-65px)] items-center px-6 py-10 sm:py-32">
           <div className="mx-auto grid max-w-5xl items-center gap-6 lg:grid-cols-2 lg:gap-16 ">
             <motion.div

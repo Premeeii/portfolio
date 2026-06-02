@@ -27,7 +27,7 @@ export default function ScrollPushBack({
 
   const scale = useTransform(scrollYProgress, [0, 0.5, 1], [1, 0.95, 0.85]);
   const opacity = useTransform(scrollYProgress, [0, 0.5, 1], [1, 0.85, 0.3]);
-  const blur = useTransform(scrollYProgress, [0, 0.5, 1], [0, 1.5, 8]);
+  const blur = useTransform(scrollYProgress, [0, 0.5, 1], [0, 0.5, 8]);
   const y = useTransform(scrollYProgress, [0, 1], [0, -30]);
 
   const filterValue = useTransform(blur, (v) => `blur(${v}px)`);
@@ -35,7 +35,7 @@ export default function ScrollPushBack({
   return (
     <div
       ref={wrapperRef}
-      style={{ minHeight: `${scrollHeight * 100}vh` }}
+      style={{ minHeight: `${scrollHeight * 50}vh` }}
       className="relative"
     >
       <motion.div
