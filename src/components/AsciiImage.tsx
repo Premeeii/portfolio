@@ -26,7 +26,7 @@ export default function AsciiImage({
   alt,
   className = "",
   cols = 80,
-  revealDuration = 2500,
+  revealDuration = 2000,
   charSet = "@%#*+=-:. ",
   charColor = "#CEC5BA",
 }: AsciiImageProps) {
