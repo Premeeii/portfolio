@@ -15,21 +15,21 @@ export default function ProjectPreview({
   activeIndex,
 }: ProjectPreviewProps) {
   return (
-    <div className="flex items-center justify-center">
+    <div className="w-full">
       <AnimatePresence mode="wait">
         <motion.div
           key={activeIndex}
-          className="relative aspect-3/4 w-full max-w-[320px] overflow-hidden rounded-3xl border border-surface/50 bg-surface/20 shadow-2xl"
-          initial={{ opacity: 0, y: 30, scale: 0.95 }}
+          className="relative aspect-video w-full overflow-hidden rounded-2xl  bg-surface/20 shadow-[0_0_30px_rgba(56,189,248,0.15)]"
+          initial={{ opacity: 0, y: 20, scale: 0.98 }}
           animate={{ opacity: 1, y: 0, scale: 1 }}
-          exit={{ opacity: 0, y: -20, scale: 0.95 }}
-          transition={{ duration: 0.5, ease: [0.25, 0.1, 0.25, 1] }}
+          exit={{ opacity: 0, y: -10, scale: 0.98 }}
+          transition={{ duration: 0.4, ease: [0.25, 0.1, 0.25, 1] }}
         >
           <Image
             src={imageSrc}
             alt={title}
             fill
-            sizes="(max-width: 768px) 80vw, 320px"
+            sizes="(max-width: 1024px) 100vw, 800px"
             className="object-cover"
             priority
           />

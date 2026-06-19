@@ -16,7 +16,10 @@ const hankenGrotesk = Hanken_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: "PreamePort",
+  title: {
+    default: "PreamePort",
+    template: "PreamePort",
+  },
   description: "Personal portfolio website",
 };
 

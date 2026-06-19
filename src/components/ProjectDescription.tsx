@@ -1,16 +1,20 @@
 "use client";
 
+import Link from "next/link";
 import { AnimatePresence, motion } from "framer-motion";
+import { ArrowRight } from "lucide-react";
 
 interface ProjectDescriptionProps {
   description: string;
   tags: string[];
+  href: string;
   activeIndex: number;
 }
 
 export default function ProjectDescription({
   description,
   tags,
+  href,
   activeIndex,
 }: ProjectDescriptionProps) {
   return (
@@ -39,6 +43,18 @@ export default function ProjectDescription({
         <p className="font-jetbrains text-sm leading-[1.9] tracking-wide text-accent/90">
           {description}
         </p>
+
+        {/* View Details Button */}
+        <Link
+          href={href}
+          className="group mt-2 inline-flex w-fit items-center gap-3 border border-accent/40 px-6 py-3 font-jetbrains text-xs font-medium tracking-[0.2em] text-accent transition-all duration-300 hover:border-accent hover:bg-accent/10"
+        >
+          VIEW DETAILS
+          <ArrowRight
+            size={14}
+            className="transition-transform duration-300 group-hover:translate-x-1"
+          />
+        </Link>
       </motion.div>
     </AnimatePresence>
   );

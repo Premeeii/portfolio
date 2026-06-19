@@ -80,8 +80,8 @@ export default function About() {
 
       {/* ─── Bento Grid Section ─── */}
       <ScrollPushBack scrollHeight={1.5}>
-        <section id="about-content" className="px-4 py-16 sm:px-6 sm:py-10">
-          <div className="mx-auto max-w-5xl">
+        <section id="about-content" className="px-2 py-16 sm:px-4 sm:py-10">
+          <div className="mx-auto max-w-8xl">
             {/* ── Row 1: Image | Text ── */}
             <div className="grid grid-cols-1 md:grid-cols-3">
               <motion.div
@@ -110,11 +110,14 @@ export default function About() {
                 className="flex items-center bg-background p-8 sm:p-12 md:col-span-2"
               >
                 <p className="leading-relaxed text-accent text-sm sm:text-base">
-                  I am a software engineer dedicated to building clean, scalable,
-                  and highly performant applications. My approach blends
-                  architectural rigor with an eye for modern, minimalist design,
-                  ensuring that robust backend systems are paired with elegant
-                  user interfaces.
+                  Hello, I'm Kittapas Chocktanatorn. I'm graduate from Thammasat
+                  University, Rangsit Center, majoring in Computer Science with
+                  a minor in Software Engineering. My mindset regarding system
+                  development is to create solutions that can help solve
+                  problems or improve things to a better state. The starting
+                  point came from wanting to have a website that met my own
+                  needs. With this passion, it made me want to learn more about
+                  software development.
                 </p>
               </motion.div>
             </div>
@@ -130,11 +133,20 @@ export default function About() {
                 className="flex items-center bg-background p-8 sm:p-12 md:col-span-1"
               >
                 <p className="leading-relaxed text-accent text-sm sm:text-base">
-                  I am a software engineer dedicated to building clean, scalable,
-                  and highly performant applications. My approach blends
-                  architectural rigor with an eye for modern, minimalist design,
-                  ensuring that robust backend systems are paired with elegant
-                  user interfaces.
+                  "During my studies, I had many experiences both in the
+                  classroom and through participating in outside activities.
+                  This helped me develop various mindsets for self-improvement
+                  and working with others. I also had the opportunity to learn
+                  different concepts by participating in events, such as
+                  activities where various companies came to educate students to
+                  prepare them for the real working world, which showed me
+                  different mindsets and paths for self-development. The most
+                  inspiring activity for me was being a staff member for the
+                  Thailand Children's University project, teaching children to
+                  learn about the logical sequence of algorithms. Doing this
+                  helped give me a much stronger mindset for working, as it felt
+                  really good to be able to turn a difficult subject into
+                  something easy to understand."
                 </p>
               </motion.div>
 
