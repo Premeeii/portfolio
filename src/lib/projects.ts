@@ -59,7 +59,7 @@ export const PROJECTS: ProjectDetail[] = [
     imageSrc: "/aquarium.png",
     href: "/project/aquarium",
     highlights: [
-      "Developed using Vite.js, Spring Boot, and MySQ",
+      "Developed using Vite.js, Spring Boot, and MySQL",
       "Implemented Firebase using Firestore for collaboration with friends through the Co-Focusing-Room.",
       "Created a music playback feature within the web application using YouTube(Lofi Girl).",
       "Utilized Framer Motion for animations within the web application.",
