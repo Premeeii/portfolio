@@ -155,7 +155,7 @@ export default function About() {
                 variants={cellVariants}
                 initial="hidden"
                 whileInView="visible"
-                viewport={{ once: true, margin: "-60px" }}
+                viewport={{ once: true, margin: "-80px" }}
                 className="relative md:col-span-2 overflow-hidden"
               >
                 <Image
@@ -165,6 +165,56 @@ export default function About() {
                   height={600}
                   className="h-full w-full object-cover"
                 />
+              </motion.div>
+            </div>
+          </div>
+        </section>
+      </ScrollPushBack>
+
+      {/* ─── Row 3: Text (own ScrollPushBack) ─── */}
+      <ScrollPushBack scrollHeight={1.4}>
+        <section className="px-2 py-16 sm:px-4 sm:py-10">
+          <div className="mx-auto max-w-8xl">
+            <div className="grid grid-cols-1">
+              <motion.div
+                custom={4}
+                variants={cellVariants}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, margin: "-60px" }}
+                className="flex items-center bg-background p-8 sm:p-12"
+              >
+                <p className="leading-relaxed text-accent text-sm sm:text-base">
+                  &quot;The project I am most proud of is the motorcycle taxi
+                  hailing application within Thammasat University. This is
+                  because it is a project where I started from thinking of the
+                  idea right through to the implementation stage for both the
+                  backend and frontend. I experienced a lot of trial and error,
+                  including collecting data, finding the pros and cons of each
+                  tech stack, and learning the coding process using frameworks I
+                  had never used before. It can be said that it is a project I
+                  started from zero until I was able to develop it into a
+                  tangible form.&quot;
+                </p>
+              </motion.div>
+              <motion.div
+                custom={5}
+                variants={cellVariants}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, margin: "-60px" }}
+                className="flex items-center bg-background p-8 sm:p-12"
+              >
+                <p className="leading-relaxed text-accent text-sm sm:text-base">
+                  "My working style is brainstorming and discussing together
+                  within the team. I have had the opportunity to be the one
+                  assigning work, so I have experience in dividing the duties of
+                  each team member so that everyone receives tasks that are
+                  suitable for them. Finally, regarding my working mindset:
+                  teamwork, responsibility, and communication. I consider these
+                  to be important matters for working together in a team and an
+                  organization."
+                </p>
               </motion.div>
             </div>
           </div>
