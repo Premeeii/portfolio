@@ -32,28 +32,9 @@ export default function Footer() {
             </Link>
           </li>
         </ul>
-
-        {/* Sub Navigation Links */}
-        <ul className="mt-6 flex flex-wrap items-center justify-center gap-x-6 gap-y-2 sm:gap-x-8 font-jetbrains text-[10px] font-medium tracking-[0.2em] text-accent/50">
-          <li>
-            <Link href="#" className="transition-colors hover:text-accent">
-              TERM
-            </Link>
-          </li>
-          <li>
-            <Link href="#" className="transition-colors hover:text-accent">
-              PRIVACY
-            </Link>
-          </li>
-          <li>
-            <Link href="#" className="transition-colors hover:text-accent">
-              COOKIE
-            </Link>
-          </li>
-        </ul>
-
+        
         {/* Copyright */}
-        <p className="mt-14 font-jetbrains text-[9px] tracking-[0.2em] text-accent/30 sm:text-[10px]">
+        <p className="mt-8 font-jetbrains text-[9px] tracking-[0.2em] text-accent/30 sm:text-[10px]">
           © 2026 KITTAPAS CHOCKTANATORN
         </p>
       </div>
