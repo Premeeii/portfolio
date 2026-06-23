@@ -46,14 +46,6 @@ export default function Home() {
             >
               KITTAPAS CHOCTANATORN
             </motion.p>
-            <motion.p
-              initial={{ opacity: 0, y: 60 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
-              className="font-jetbrains mt-4 text-lg text-muted sm:text-xl"
-            >
-              {"//SOFTWARE ENGINEER"}
-            </motion.p>
           </div>
 
           <motion.button
